@@ -2,10 +2,13 @@ MRuby::Build.new do |conf|
   # load specific toolchain settings
   conf.toolchain
 
+  # Our example gems, uncomment to include in build
+  #conf.gem './mrb_gems/basic_example'
+  #conf.gem './mrb_gems/arguments_and_return_example'
+  #conf.gem './mrb_gems/keyword_arguments_example'
+  conf.gem './mrb_gems/basic_struct_example'
+
   # Use mrbgems
-  conf.gem './mrb_gems/basic_example'
-  conf.gem './mrb_gems/arguments_and_return_example'
-  conf.gem './mrb_gems/keyword_arguments_example'
   # conf.gem 'examples/mrbgems/ruby_extension_example'
   # conf.gem 'examples/mrbgems/c_extension_example' do |g|
   #   g.cc.flags << '-g' # append cflags in this gem
