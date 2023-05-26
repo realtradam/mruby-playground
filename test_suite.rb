@@ -32,7 +32,7 @@ if Object.const_defined? 'BasicStructExample'
   puts " - Basic Struct Example - "
   puts "Making a new rgb struct with:"
   puts " r: 10, g: 20, b: 30"
-  color = BasicStructExample::Color.new(10,20,30)
+  color = Color.new(10,20,30)
   puts "Red is #{color.r}"
   puts "Set red to 60: #{color.r = 60}"
   puts "Red is #{color.r}"

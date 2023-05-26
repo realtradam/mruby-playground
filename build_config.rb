@@ -3,8 +3,8 @@ MRuby::Build.new do |conf|
   conf.toolchain
 
   # Our example gems, uncomment to include in build
-  #conf.gem './mrb_gems/basic_example'
-  #conf.gem './mrb_gems/arguments_and_return_example'
+  conf.gem './mrb_gems/basic_example'
+  conf.gem './mrb_gems/arguments_and_return_example'
   #conf.gem './mrb_gems/keyword_arguments_example'
   conf.gem './mrb_gems/basic_struct_example'
 
