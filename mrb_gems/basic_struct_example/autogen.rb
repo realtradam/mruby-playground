@@ -26,12 +26,24 @@ mgem.add_struct(class_name: "Color", cstruct_name: "Color") do |struct|
   )
 end
 
-result = "typedef struct Color
+result = <<CCODE
+typedef struct Color
 {
 	char r;
 	char g;
 	char b;
-} Color;\n"
+} Color;
+
+Color color_shift(Color color)
+{
+  Color result = {
+    .r = color.g,
+    .g = color.a,
+    .b = color.b
+  }
+  return result;
+}
+CCODE
 
 result += mgem.build
 

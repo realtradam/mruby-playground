@@ -28,7 +28,7 @@ else
   puts "Keyword Arguments Example const not found, skipping test..."
 end
 
-if Object.const_defined? 'BasicStructExample'
+if Object.const_defined? 'Color'
   puts " - Basic Struct Example - "
   puts "Making a new rgb struct with:"
   puts " r: 10, g: 20, b: 30"
